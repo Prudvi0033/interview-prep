@@ -12,7 +12,7 @@ const Topics = () => {
   return (
     <div>
       <Navbar />
-      <div className="pt-20 gap-4 grid grid-cols-2">
+      <div className="pt-20 gap-4 grid grid-cols-3">
         <Items icon={C} title={"C"} desc={"Strengthen your understanding of procedural programming, memory management, and system-level programming with C."} />
         <Items icon={py} title={"C"} desc={"Strengthen your understanding of procedural programming, memory management, and system-level programming with C."} />
         <Items icon={java} title={"C"} desc={"Strengthen your understanding of procedural programming, memory management, and system-level programming with C."} />
