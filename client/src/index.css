@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: "Raleway", serif;
+}
+
+.gradient-text {
+  background: linear-gradient(to bottom right, #d946ef, #f43f5e); /* Equivalent to bg-gradient-to-br from-fuchsia-500 to-rose-500 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-weight: bold; 
+}
+
+
+
+
+.button {
+  background-color: #3b82f6; /* Blue background */
+  padding: 1rem;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.button:hover {
+  background-color: #2563eb; /* Slightly darker blue */
+  transform: scale(1.1);
+  box-shadow: 0px 4px 6px rgba(255, 65, 108, 0.5), 
+              0px 1px 3px rgba(0, 123, 255, 0.5); /* Gradient shadow */
+}
