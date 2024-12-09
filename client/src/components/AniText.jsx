@@ -7,9 +7,9 @@ const AniText = () => {
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length); // Loop through textArray
-    }, 2000); // Change text every 2 seconds
-    return () => clearInterval(interval); // Cleanup interval on unmount
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % textArray.length); 
+    }, 2000); 
+    return () => clearInterval(interval);
   }, [textArray.length]);
 
   return (
@@ -22,10 +22,10 @@ const AniText = () => {
     }}>
       <AnimatePresence mode="wait">
         <motion.div
-          key={currentIndex} // Ensures a new animation is triggered for each text
-          initial={{ opacity: 0, y: 50 }} // Text starts below the center
-          animate={{ opacity: 1, y: 0 }} // Moves into the center and becomes visible
-          exit={{ opacity: 0, y: -50 }} // Moves above the center and disappears
+          key={currentIndex} 
+          initial={{ opacity: 0, y: 50 }} 
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -50 }} 
           transition={{ duration: 0.8 }}
         >
           {textArray[currentIndex]}
