@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const AniText = () => {
-  const textArray = ["IT Support", "Data Analytics", "Project Management", "UX Design", "CyberSecurity"];
+  const textArray = ["C", "C++", "Python", "Java", "Data Structures", "MySQL"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   React.useEffect(() => {
